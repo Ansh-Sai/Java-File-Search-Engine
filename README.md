@@ -84,7 +84,7 @@ file count grows (and for multi-word queries). The multithreaded speed-up depend
 - Not updated live when files change while running (next step: `WatchService`).
 
 
-## Robustness notes (v2.1)
+## Robustness notes 
 
 - Content reads enforce the 1 MiB limit while streaming, even if a file grows after the initial scan.
 - Interrupted content indexing cancels outstanding tasks, clears partial content-index state, and reports interruption to the CLI.
